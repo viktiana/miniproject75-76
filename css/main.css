@@ -1,5 +1,5 @@
 .header-back {
-  background-image: url(/img/hero-back.webp);
+  background-image: url("./img/hero-back.webp");
   background-size: cover;
   padding: 40px 146px;
 }
@@ -258,7 +258,7 @@ header {
   margin: 80px auto;
   margin: 0 auto;
   margin-top: 200px;
-  background-image: linear-gradient(to right, black 10%, transparent 80%), url("/img/section-photo.webp");
+  background-image: linear-gradient(to right, black 10%, transparent 80%), url("./img/section-photo.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
