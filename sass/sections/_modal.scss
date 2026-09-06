@@ -1,0 +1,99 @@
+@import "./variables";
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.453);
+    z-index: 100;
+    
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    
+}
+
+.x{
+    
+    max-height: 25px;
+    max-width: 25px;
+    cursor: pointer;
+    
+}
+
+.modal {
+    z-index: 110;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: 1000px;   
+    padding: 12px;
+    padding-right: 0px;
+    background-color: $base-text;
+    border-radius: 28px;
+    box-shadow: 0 4px 24px black;
+    opacity: 0;
+}
+
+.backdrop:not(.is-hidden) .modal {
+    animation: modal 0.4s ease forwards;
+}
+
+@keyframes modal {
+    0% {
+        min-height: 50px;
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        min-height: 520px;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+.modal-bread{
+    background-image: url(/img/modal-bread.webp);
+    background-size: cover;
+    margin: 100px 0px 0px 0px;
+}
+.modal-form{    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 70px;
+    padding:0px 0px 85px 70px;
+    padding-right: 0px;
+}
+.modal h2{
+    font-size: 45px;
+    font-weight: lighter;
+    padding: 0px 70px;
+    padding-right: 0px;
+}
+.modal-form input{
+    height: 52px;
+    font-size: 24px;
+    background-color: $form-bg;
+    border: none;
+    padding: 5px;
+    width: 360px;
+}
+.modal-form button{
+    width: 207px;
+    height: 57px;
+    background-color: $form-btn;
+    border-radius: 17px;
+    color: $base-text;
+    font-size: 24px;
+    font-weight: lighter;
+}

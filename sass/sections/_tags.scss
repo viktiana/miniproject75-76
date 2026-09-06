@@ -1,0 +1,17 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: $white-color;
+    background-color: $bg-color;
+}
+
+main {
+  width: 100%;
+   overflow: hidden;
+}

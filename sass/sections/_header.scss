@@ -1,0 +1,23 @@
+@import "variables";
+
+.header-back{
+    background-image: url(/img/hero-back.webp);
+    background-size: cover;
+    padding: 40px 146px;
+}
+
+body{
+    margin: 0;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    color: $base-text;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 100;
+}
+header{
+    padding:0px 0px 71px 10px;
+}

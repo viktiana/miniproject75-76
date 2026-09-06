@@ -1,0 +1,28 @@
+@import "variables";
+
+.hero-title{
+    font-size: 70px;
+    color: $base-text;
+    max-width: 650px;
+    font-weight: lighter;
+    margin-bottom: 0px;
+}
+
+.hero-text{
+    max-width: 600px;
+    font-size: 21px;
+    color: $base-text;
+    font-weight: lighter;
+    padding-left: 10px;
+    margin: 35px 0px;
+}
+
+.hero-btn{
+    width: 207px;
+    height: 57px;
+    background-color: $btn-color;
+    border-radius: 17px;
+    color: $base-text;
+    font-size: 24px;
+    font-weight: lighter;
+}

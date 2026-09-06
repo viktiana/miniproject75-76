@@ -1,0 +1,108 @@
+@import "variables";
+
+.quality {
+    position: relative;
+    overflow: hidden;
+    background: $bg-color;
+    color: $white-color;
+    padding: 45px 0;
+}
+
+.quality-title {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto 65px;
+    text-align: center;
+    font-family: "Italiana", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: $white-color;
+}
+
+.quality-content {
+    position: relative;
+    z-index: 2;
+    width: 760px;
+    max-width: 90%;
+    height: 330px;
+    margin: 0 auto;
+}
+
+.quality-bread,
+.quality-cookie,
+.quality-pie {
+    position: absolute;
+    width: 190px;
+}
+
+.quality-bread {
+    left: 0;
+    top: 0;
+}
+
+.quality-cookie {
+    left: 250px;
+    top: 105px;
+}
+
+.quality-pie {
+    right: 0;
+    top: 135px;
+}
+
+.quality-img {
+    display: block;
+    width: 190px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.quality-ol {
+    position: relative;
+    width: 185px;
+    min-height: 105px;
+    box-sizing: border-box;
+    margin: 10px 0 0;
+    padding: 12px 10px 12px 27px;
+    background: linear-gradient(135deg,
+            rgba(105, 105, 108, 0.95),
+            rgba(75, 75, 78, 0.95));
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    color: $white-color;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.quality-li {
+    margin: 0;
+    padding: 0;
+}
+
+.quality-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.quality-bg>div {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+}
+
+.quality-bg span {
+    flex-shrink: 0;
+    margin-right: 35px;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.5px;
+    color: transparent;
+    -webkit-text-stroke: 0.25px $white-color;
+}

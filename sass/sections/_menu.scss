@@ -1,0 +1,62 @@
+@import "variables";
+
+.menu {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: $white-color;
+}
+
+.menu-content {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 8px;
+}
+
+.menu-img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.menu-card {
+    width: 300px;
+    text-align: center;
+}
+
+.menu-description{
+    display: inline-block;
+    margin-top: 2px;
+    color: $white-color;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.border{
+    border: 1px solid $white-color;
+}
+
+.menu-btn {
+    display: block;
+    margin: 1px auto 0;
+    width: 160px;
+    height: 41px;
+    border: none;
+    border-radius: 17px;
+    color: $white-color;
+    background-color: $btn-color;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 8px;
+}
