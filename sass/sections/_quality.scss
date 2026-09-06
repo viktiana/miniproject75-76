@@ -2,6 +2,7 @@
 
 .quality {
     position: relative;
+    min-height: 650px;
     overflow: hidden;
     background: $bg-color;
     color: $white-color;
@@ -17,6 +18,7 @@
     font-size: 40px;
     font-weight: 400;
     color: $white-color;
+    margin-top: 50px;
 }
 
 .quality-content {
@@ -100,9 +102,9 @@
     flex-shrink: 0;
     margin-right: 35px;
     font-family: "Inter", sans-serif;
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 500;
-    line-height: 1.5px;
+    line-height: 1;
     color: transparent;
     -webkit-text-stroke: 0.25px $white-color;
 }

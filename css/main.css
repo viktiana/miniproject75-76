@@ -256,7 +256,8 @@ header {
 .photos-div {
   width: 900px;
   margin: 80px auto;
-  margin: 0px;
+  margin: 0 auto;
+  margin-top: 200px;
   background-image: linear-gradient(to right, black 10%, transparent 80%), url("/img/section-photo.webp");
   background-size: cover;
   background-position: center;
@@ -447,6 +448,7 @@ body {
 
 .quality {
   position: relative;
+  min-height: 650px;
   overflow: hidden;
   background: #202023;
   color: #FFFFFF;
@@ -462,6 +464,7 @@ body {
   font-size: 40px;
   font-weight: 400;
   color: #FFFFFF;
+  margin-top: 50px;
 }
 
 .quality-content {
@@ -545,9 +548,9 @@ body {
   flex-shrink: 0;
   margin-right: 35px;
   font-family: "Inter", sans-serif;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 500;
-  line-height: 1.5px;
+  line-height: 1;
   color: transparent;
   -webkit-text-stroke: 0.25px #FFFFFF;
 }
